@@ -39,7 +39,8 @@
 
     onMounted(() => {
         document.addEventListener('keydown', (e: any) => {
-            if(!msg.value || e.code !== 'Enter') return;
+            if(!msg.value.trim().length || e.code !== 'Enter') return;
+            
             const newMsg = {
                 id: `${props.userId}-${Math.random()}`,
                 userMsgId: props.userId,
@@ -49,8 +50,6 @@
             newMessage(newMsg)
 
             msg.value = ''
-
-            // const msgBox = document.query 
         })
     })
 
