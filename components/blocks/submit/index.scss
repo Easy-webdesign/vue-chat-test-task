@@ -1,0 +1,9 @@
+.v-chat__submit {
+    width: 100%;
+    @include flex;
+
+    input {
+        flex-grow: 1;
+        margin-right: 24px;
+    }
+}

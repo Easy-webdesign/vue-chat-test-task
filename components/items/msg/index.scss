@@ -1,0 +1,9 @@
+.v-chat__msg {
+    width: 100%;
+    &--right { @include flex(f, fe, c); }
+
+    &-content {
+        width: 70%;
+        p { margin-bottom: 8px; }
+    }
+}
